@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Login from "./Login";
 import Registration from "./Registration";
+import facebook from "../../facebook.png";
+import google from "../../google.jfif";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   
@@ -60,6 +62,7 @@ export default function SimpleTabs(props) {
 
   
   return (
+  <>
     <div className="row">
     <div className="col-2"></div>
     <div className="card col-8">
@@ -89,9 +92,34 @@ export default function SimpleTabs(props) {
 
         </Registration>
       </TabPanel>
-    </div>
-             </div>
+     
+          </div>
+          </div>
          </div>
+       
          </div>
+         <div className="row">
+    <div className="col-2"></div>
+    <div className="col-8">
+           <div className="pt-3">________<b>Continue with</b> ________</div>
+           </div></div>
+           <div className="row">
+    <div className="col-4"></div>
+    <div className="col-2 ">
+           <div className="pt-3"><img src={facebook}></img></div>
+           </div>
+           <div className="col-2">
+           <div className="pt-3"><img src={google}></img></div>
+           </div>
+           </div>
+           
+           <div className="row">
+    <div className="col-2"></div>
+    <div className="col-8">
+           <div className="pt-3 text-dark"><b>By Clicking Signin You Agree With BerryBox <i className="text-warning">Terms and Conditions</i> And <i className="text-warning">Google Privacy</i></b></div>
+           </div></div>
+           
+           
+           </>
   );
 }

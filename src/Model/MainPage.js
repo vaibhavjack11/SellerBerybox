@@ -27,7 +27,7 @@ class MainPageContainer extends React.Component {
          {/* <Route path="/home" component={Home} /> */}
 
       </div>
-      <div className=""></div>
+      
    </Router>
         {/* <Home
         ></Home> */}
