@@ -59,13 +59,13 @@ export default function SimpleTabs(props) {
     setValue(newValue);
   };
 
-
-  
+  let matches= window.matchMedia("(max-width: 768px) and (min-width:10px)").matches
+  console.log(matches)
   return (
   <>
     <div className="row">
-    <div className="col-2"></div>
-    <div className="card col-8">
+    <div className={!matches?"col-2":"col-0"}></div>
+    <div className={!matches?"card col-8":"card col-12"}>
     <div className="card-body">
     <div className={classes.root}  style={{backgroundColor:"#ecb2c0"}}>
     <div className="row text-center">
