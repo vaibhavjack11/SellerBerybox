@@ -20,10 +20,10 @@ function Login(props) {
             <div class="footer__newslatter">
             <h3 style={{fontFamily:"cursive"}}>Login</h3>
             <form action="#">
-            <div className="row pt-5 m-4">
+            <div className="row pt-3 m-2">
             <input type="text" placeholder="Email" className=""/>
             </div>
-            <div className="row pt-5 m-4">
+            <div className="row pt-3 m-2">
             <input type="password" placeholder="Password" className=""/>
             </div>
             <div className="row ">
