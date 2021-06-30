@@ -95,7 +95,9 @@ function Home() {
             <div class="section-title">
             <h4>jewellery shop</h4>
             </div>
+            
             </div>
+            <b class="text-success text-end" style={{cursor:"pointer"}}>+Add Product</b>
             <div class="col-lg-8 col-md-8">
             </div>
             </div>
