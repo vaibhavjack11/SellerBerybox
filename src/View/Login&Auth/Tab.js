@@ -60,13 +60,22 @@ export default function SimpleTabs(props) {
 
   
   return (
-    <div className={classes.root}>
+    <div className="row">
+    <div className="col-2"></div>
+    <div className="card col-8">
+    <div className="card-body">
+    <div className={classes.root}  style={{backgroundColor:"#ecb2c0"}}>
+    <div className="row text-center">
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+        
+        .
           <Tab label="Login" {...a11yProps(0)} />
           <Tab label="Registration" {...a11yProps(1)} />
+         
         </Tabs>
       </AppBar>
+      </div>
       <TabPanel value={value} index={0} >
         <Login {...props}
         >
@@ -74,10 +83,15 @@ export default function SimpleTabs(props) {
 
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Registration>
+        <Registration
+        {...props}
+        >
 
         </Registration>
       </TabPanel>
     </div>
+             </div>
+         </div>
+         </div>
   );
 }

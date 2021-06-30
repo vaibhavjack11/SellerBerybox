@@ -17,16 +17,16 @@ function Registration() {
             <div class="footer__newslatter">
             <h3 style={{fontFamily:"cursive"}}>Registration</h3>
             <form action="#">
-            <div className="row pt-5 m-4">
+            <div className="row pt-2 m-2">
             <input type="text" placeholder="First Name" className=""/>
             </div>
-            <div className="row pt-5 m-4">
+            <div className="row pt-2 m-2">
             <input type="text" placeholder="Last Name" className=""/>
             </div>
-            <div className="row pt-5 m-4">
+            <div className="row pt-2 m-2">
             <input type="text" placeholder="Email" className=""/>
             </div>
-            <div className="row pt-5 m-4">
+            <div className="row pt-2 m-2">
             <input type="password" placeholder="Password" className=""/>
             </div>
             <div className="row mb-5 ">

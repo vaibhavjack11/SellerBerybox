@@ -31,7 +31,7 @@ function Login(props) {
             <labal className="text-dark">forgot password? <a className="text-primary">Click Here</a></labal></div>
 
             </div>
-            <div className="row mb-5 pt-5">
+            <div className="row mb-5 pt-1">
             <div className="col-7">
             <Button onClick={hello} variant="contained" color="primary">
              Login
