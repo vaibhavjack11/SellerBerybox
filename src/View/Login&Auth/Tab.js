@@ -68,9 +68,9 @@ export default function SimpleTabs(props) {
     <div className={!matches?"card col-8":"card col-12"}>
     <div className="card-body">
     <div className={classes.root}  style={{backgroundColor:"#ecb2c0"}}>
-    <div className="row text-center">
-      <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+    <div className="row text-center" >
+      <AppBar position="static" style={{backgroundColor:"#0b3a6a"}}>
+        <Tabs value={value} onChange={handleChange} aria-label="s#0b3a6aimple tabs example">
         
         .
           <Tab label="Login" {...a11yProps(0)} />

@@ -33,9 +33,9 @@ function Login(props) {
             </div>
             <div className="row mb-5 pt-1">
             <div className="col-7">
-            <Button onClick={hello} variant="contained" color="primary">
+            <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} >
              Login
-            </Button>
+            </button>
             </div>
             </div>
             </form>
