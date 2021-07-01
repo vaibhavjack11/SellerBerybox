@@ -65,8 +65,8 @@ export default function SimpleTabs(props) {
   <>
     <div className="row">
     <div className={!matches?"col-2":"col-0"}></div>
-    <div className={!matches?"card col-8":"card col-12"}>
-    <div className="card-body">
+    <div className={!matches?" col-8":" col-12"}>
+    <div className="ml-3 mr-3">
     <div className={classes.root}  style={{backgroundColor:"#ecb2c0"}}>
     <div className="row text-center" >
       <AppBar position="static" style={{backgroundColor:"#0b3a6a"}}>
