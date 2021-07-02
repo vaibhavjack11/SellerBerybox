@@ -106,7 +106,7 @@ function Login(props) {
             <input type="text" placeholder="Email" className="" value={email}
                 onChange={(e) => {
                 e.preventDefault();
-                props.setEmail(e.target.value);
+                //props.setEmail(e.target.value);
               }}
 
             />
@@ -115,7 +115,7 @@ function Login(props) {
             <input type="password" placeholder="Password" className="" value={password}
                 onChange={(e) => {
                 e.preventDefault();
-                props.setPassword(e.target.value);
+               // props.setPassword(e.target.value);
               }}
 
             />
