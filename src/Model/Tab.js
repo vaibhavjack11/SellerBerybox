@@ -7,12 +7,16 @@ class TabContainer extends React.Component {
     };
   }
 
+componentDidMount=()=>{
 
+  console.log(this.props)
+}
  
   render() {
     return (
       <>
         <Tab
+        props={this.props}
         ></Tab>
       </>
     );

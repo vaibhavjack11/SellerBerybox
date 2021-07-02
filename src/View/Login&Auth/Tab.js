@@ -37,7 +37,8 @@ export default function SimpleTabs(props) {
        
       {alreadyHaveAccount ?
         <div>
-        <Login {...props}
+        <Login 
+        {...props}
         >
         </Login>
       </div>

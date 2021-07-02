@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "../Model/Home";
-import Tab from "../Model/Tab"
+import Tab from "../View/Login&Auth/Tab"
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 class MainPageContainer extends React.Component {
   constructor(props) {

@@ -4,6 +4,7 @@ import { fire } from "../../Firebase";
 function Login(props) {
     console.log(props)
     const hello = ()=>{
+    
         if(user){
         props.history.push("/home")
         window.location.reload();
@@ -11,7 +12,9 @@ function Login(props) {
         else{
             alert("Login failed")
         }
-        }
+    }
+
+
         const [user, setUser] = useState("");
         const [email, setEmail] = useState("");
         const [password, setPassword] = useState("");
@@ -106,7 +109,7 @@ function Login(props) {
             <input type="text" placeholder="Email" className="" value={email}
                 onChange={(e) => {
                 e.preventDefault();
-                //props.setEmail(e.target.value);
+                setEmail(e.target.value);
               }}
 
             />
@@ -115,7 +118,7 @@ function Login(props) {
             <input type="password" placeholder="Password" className="" value={password}
                 onChange={(e) => {
                 e.preventDefault();
-               // props.setPassword(e.target.value);
+               setPassword(e.target.value);
               }}
 
             />
@@ -123,7 +126,7 @@ function Login(props) {
 
             <div className="row mb-5 pt-1">
             <div className="col-7">
-            <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} onClick={handleLogin} >
+            <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} >
              Login
             </button>
             </div>
@@ -135,16 +138,7 @@ function Login(props) {
             <labal className="text-dark">forgot password? <a className="text-primary">Click Here</a></labal></div>
 
             </div>
-            <div className="row mb-2 pt-1">
-            <div className="col-12">
-            <label>
-             Create New Account <a className="text-primary" style={{cursor:"pointer"}} onClick={(e) => {
-                  e.preventDefault();
-                  props.Changepage();
-                }}>Register</a>
-            </label>
-            </div>
-            </div>
+
             </form>
             <div class="footer__social">
             </div>

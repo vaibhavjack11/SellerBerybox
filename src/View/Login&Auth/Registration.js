@@ -121,19 +121,9 @@ function Registration(props) {
             </div>
             <div className="row mb-5 ">
             <div className="col-7 text-end">
-            <Button variant="contained" color="primary" onClick={handleSignin}>
-             Signin
-            </Button>
-            </div>
-            </div>
-            <div className="row mb-2 pt-1">
-            <div className="col-12">
-            <label>
-             already have account <a className="text-primary" style={{cursor:"pointer"}} onClick={(e) => {
-                  e.preventDefault();
-                  props.Changepage();
-                }}>login</a>
-            </label>
+            <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} onClick={handleSignin} >
+            Signin
+            </button>
             </div>
             </div>
             </form>
