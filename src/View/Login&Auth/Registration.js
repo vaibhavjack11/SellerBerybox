@@ -130,10 +130,6 @@ function Registration(props) {
             </div>
             </div>
             </div>
-            
-            
-       
-        
       </div>)
 
 }
