@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "../Model/Home";
+import Categories from "../Model/Categories";
 import Tab from "../View/Login&Auth/Tab"
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 class MainPageContainer extends React.Component {
@@ -22,7 +23,7 @@ class MainPageContainer extends React.Component {
 
          <Route exact path="/" component={Tab} />
          <Route path="/home" component={Home} />
-         {/* <Route path="/home" component={Home} /> */}
+         <Route path="/categories" component={Categories} />
 
       </div>
       

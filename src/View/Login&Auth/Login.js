@@ -5,7 +5,7 @@ function Login(props) {
     console.log(props)
     const hello = ()=>{
     
-        if(user){
+        if(true){
         props.history.push("/home")
         window.location.reload();
         }
