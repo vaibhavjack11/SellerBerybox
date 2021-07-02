@@ -4,6 +4,8 @@ import { fire } from "../../Firebase";
 import Button from '@material-ui/core/Button';
 function Registration(props) {
     console.log(props)
+
+    const call = () =>{console.log("aa")}
     const hello = (succ)=>{
         if(user){
         console.log(succ)
@@ -122,6 +124,16 @@ function Registration(props) {
             <Button variant="contained" color="primary" onClick={handleSignin}>
              Signin
             </Button>
+            </div>
+            </div>
+            <div className="row mb-2 pt-1">
+            <div className="col-12">
+            <label>
+             already have account <a className="text-primary" style={{cursor:"pointer"}} onClick={(e) => {
+                  e.preventDefault();
+                  props.Changepage();
+                }}>login</a>
+            </label>
             </div>
             </div>
             </form>

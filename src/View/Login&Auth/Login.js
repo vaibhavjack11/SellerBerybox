@@ -120,16 +120,29 @@ function Login(props) {
 
             />
             </div>
-            <div className="row ">
-            <div className="col-12 text-end"> 
-            <labal className="text-dark">forgot password? <a className="text-primary">Click Here</a></labal></div>
 
-            </div>
             <div className="row mb-5 pt-1">
             <div className="col-7">
             <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} onClick={handleLogin} >
              Login
             </button>
+            </div>
+            </div>
+
+
+            <div className="row ">
+            <div className="col-12 text-end"> 
+            <labal className="text-dark">forgot password? <a className="text-primary">Click Here</a></labal></div>
+
+            </div>
+            <div className="row mb-2 pt-1">
+            <div className="col-12">
+            <label>
+             Create New Account <a className="text-primary" style={{cursor:"pointer"}} onClick={(e) => {
+                  e.preventDefault();
+                  props.Changepage();
+                }}>Register</a>
+            </label>
             </div>
             </div>
             </form>
