@@ -103,7 +103,7 @@ function Login(props) {
             <div class="col-lg-4 col-md-8 col-sm-8"><img src={logo}></img></div>
             <div class="col-lg-4 col-md-8 col-sm-8">
             <div class="footer__newslatter">
-            <h3 style={{fontFamily:"cursive"}}>Login</h3>
+            <h3>Login</h3>
             <form action="#">
             <div className="row pt-3 m-2">
             <input type="text" placeholder="Email" className="" value={email}

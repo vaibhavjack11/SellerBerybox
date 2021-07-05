@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <MainPage></MainPage>
     </div>
+    
   );
 }
 export default App;

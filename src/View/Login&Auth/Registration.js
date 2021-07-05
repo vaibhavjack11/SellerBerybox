@@ -105,7 +105,7 @@ function Registration(props) {
             <div class="col-lg-4 col-md-8 col-sm-8"><img src={logo}></img></div>
             <div class="col-lg-4 col-md-8 col-sm-8">
             <div class="footer__newslatter">
-            <h3 style={{fontFamily:"cursive"}}>Registration</h3>
+            <h3>Registration</h3>
             <form action="#">
             <div className="row pt-2 m-2">
             <input type="text" placeholder="First Name" className=""/>

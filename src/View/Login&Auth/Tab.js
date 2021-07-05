@@ -24,14 +24,14 @@ export default function SimpleTabs(props) {
       <div className={!matches?"card-body col-6":"card-body col-12"}>
       <div>
       <div className="row">
-      <h3 className="col-6" style={{cursor:"pointer",fontFamily:"cursive",backgroundColor:!alreadyHaveAccount ?"#8cc3dd":"#cce3f5"}}  onClick={(e) => {
+      <h5 className="col-6" style={{cursor:"pointer",backgroundColor:!alreadyHaveAccount ?"#8cc3dd":"#cce3f5"}}  onClick={(e) => {
                   e.preventDefault();
                   Changepage(true);
-                }}>Login</h3>
-      <h3 className="col-6" style={{cursor:"pointer",fontFamily:"cursive",backgroundColor:!alreadyHaveAccount ?"#cce3f5":"#8cc3dd"}} onClick={(e) => {
+                }}>Login</h5>
+      <h5 className="col-6" style={{cursor:"pointer",backgroundColor:!alreadyHaveAccount ?"#cce3f5":"#8cc3dd"}} onClick={(e) => {
                   e.preventDefault();
                   Changepage(false);
-                }}>Registration</h3>
+                }}>Registration</h5>
       </div>
       </div>
        
