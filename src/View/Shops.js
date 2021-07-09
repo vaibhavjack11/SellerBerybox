@@ -1,5 +1,5 @@
 import React from "react"
-function Categories() {
+function Shop() {
 
 
     return (
@@ -36,35 +36,17 @@ function Categories() {
             <div class="row">
             <div class="col-xl-3 col-lg-2">
             <div class="header__logo">
-            <a href="#"><h3 style={{fontFamily:"cursive"}}>DASHBOARD</h3></a>
+            <a href="home"><h4>ADD STORE/SHOP</h4></a>
             </div>
             </div>
             <div class="col-xl-6 col-lg-7">
             <nav class="header__menu">
-            {/* <ul>
-            <li class="active"><a href="#">Categories</a></li>
-            <li><a href="#">Women’s</a></li>
-            <li><a href="#">Men’s</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Pages</a>
-            <ul class="dropdown">
-            <li><a href="#">Product Details</a></li>
-            <li><a href="#">Shop Cart</a></li>
-            <li><a href="#">Checkout</a></li>
-            <li><a href="#">Blog Details</a></li>
-            </ul>
-            </li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul> */}
             </nav>
             </div>
             <div class="col-lg-3">
             <div class="header__right">
             <div class="header__right__auth">
-            <h3 style={{fontFamily:"cursive"}}>Seller</h3>
-            {/* <a href="#">Login</a>
-            <a href="#">Register</a> */}
+            <a href="home"><h3>Seller</h3></a>
             </div>
             <ul class="header__right__widget">
             <li><span class="icon_search search-switch"></span></li>
@@ -88,20 +70,246 @@ function Categories() {
            
             
             
-            <section class="product spad">
-            <div class="container">
+            <section class="product ">
+            <div class="container ">
             <div class="row">
-            <div class="col-lg-4 col-md-4">
-            <div class="section-title">
-            <h4>jewellery shop</h4>
+            {/* <div class="col-lg-4 col-md-4">
+            <div class="">
+           <br></br>
             </div>
             
+            </div> */}
+            
+            <div class="col-lg-12 col-md-12">
             </div>
-            <b class="text-success text-end" style={{cursor:"pointer"}}>+Add Product</b>
-            <div class="col-lg-8 col-md-8">
             </div>
-            </div>
+            <div class="row ">
+            
+            <div className="col-4 text-center">
+            <h4>Shops</h4>
             <div class="row property__gallery">
+            <div class="col-lg-12 col-md-4 col-sm-6 mix">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-1.jpg">
+            <div class="label new">New</div>
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Buttons tweed blazer - $ 59.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 1</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-2.jpg">
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Flowy striped skirt - $ 49.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+            
+            </div>
+            <div class="product__price">Shop No. 2</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-3.jpg">
+            <div class="label stockout">out of stock</div>
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Cotton T-Shirt - $ 59.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 3</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-4.jpg">
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Slim striped pocket shirt - $ 59.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 4</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-5.jpg">
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Fit micro corduroy shirt - $ 59.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 5</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-6.jpg">
+            <div class="label sale">Sale</div>
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-6.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Tropical Kimono $ 49.0 <span>$ 59.0</span></a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 6</div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-7.jpg">
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-7.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Contrasting sunglasses - $ 59.0</a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price ">Shop No. 7  </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
+            <div class="product__item">
+            <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-8.jpg">
+            <div class="label">Sale</div>
+            <ul class="product__hover">
+            <li><a href="assets/img/product/product-8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+            </div>
+            <div class="product__item__text">
+            <h6><a href="#">Water resistant backpack - $ 49.0 </a></h6>
+            <div class="rating">
+             
+             
+             
+             
+             
+            </div>
+            <div class="product__price">Shop No. 8</div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+              </div>
+            <div  className="col-8">
+            
+            
+            <h4 className="">Items</h4>
+            
+            <div className="card border">
+
+
+            </div>
+            <div className="card border">
+
+
+      
+
+            <div className="card-body">
+
+                <b className="header__menu">
+                 <ul>
+            
+
+
+            <li class="active"><a href="#">Filter</a>
+            <ul class="dropdown">
+            <li><a href="#">Prize</a></li>
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Location</a></li>
+            </ul>
+            </li>
+            <li><a href="additem">+Add Item</a></li>
+
+            </ul>
+            </b> 
+
+
+            <div class="row property__gallery pt-3">
             <div class="col-lg-3 col-md-4 col-sm-6 mix">
             <div class="product__item">
             <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-1.jpg">
@@ -113,7 +321,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Buttons tweed blazer</a></h6>
+            <h6><a href="#">Buttons tweed blazer - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -121,7 +329,7 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -135,15 +343,15 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Flowy striped skirt</a></h6>
+            <h6><a href="#">Flowy striped skirt - $ 49.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fa fa-star text-secondary"></i>
             </div>
-            <div class="product__price">$ 49.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -158,7 +366,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Cotton T-Shirt</a></h6>
+            <h6><a href="#">Cotton T-Shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -166,7 +374,7 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -180,7 +388,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Slim striped pocket shirt</a></h6>
+            <h6><a href="#">Slim striped pocket shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -188,7 +396,7 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -202,7 +410,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Fit micro corduroy shirt</a></h6>
+            <h6><a href="#">Fit micro corduroy shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -210,12 +418,12 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
-            <div class="product__item sale">
+            <div class="product__item">
             <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-6.jpg">
             <div class="label sale">Sale</div>
             <ul class="product__hover">
@@ -225,7 +433,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Tropical Kimono</a></h6>
+            <h6><a href="#">Tropical Kimono $ 49.0 <span>$ 59.0</span></a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -233,7 +441,7 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -247,7 +455,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Contrasting sunglasses</a></h6>
+            <h6><a href="#">Contrasting sunglasses - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -255,12 +463,12 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price ">Description  </div>
             </div>
             </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
-            <div class="product__item sale">
+            <div class="product__item">
             <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-8.jpg">
             <div class="label">Sale</div>
             <ul class="product__hover">
@@ -270,7 +478,7 @@ function Categories() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Water resistant backpack</a></h6>
+            <h6><a href="#">Water resistant backpack - $ 49.0 </a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -278,14 +486,39 @@ function Categories() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
+            </div>
+
+
+
+
+
+
+
+            </div>
+            </div>
+            </div>
+                
             </div>
             </div>
             </section>
             
+              
+
+
+             
+
+           
+
+
+
+
+
+
+
             
             <section class="banner set-bg" data-setbg="assets/img/banner/banner-1.jpg">
             <div class="container">
@@ -368,8 +601,7 @@ function Categories() {
             <div class="footer__newslatter">
             <h6>NEWSLETTER</h6>
             <form action="#">
-            <input type="text" placeholder="Email" />
-            <button type="submit" class="site-btn">Subscribe</button>
+
             </form>
             <div class="footer__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -408,4 +640,4 @@ function Categories() {
 
 
 
-export default Categories;
+export default Shop;

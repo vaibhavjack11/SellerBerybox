@@ -1,7 +1,27 @@
 import React from "react"
-function Home() {
+function Home(props) {
+    const hello = ()=>{
+    
+        if(true){
+        props.history.push("/businessMAnagement")
+        window.location.reload();
+        }
+        else{
+            alert("Login failed")
+        }
+    }
 
 
+    const hello1 = ()=>{
+    
+        if(true){
+        props.history.push("/addBusiness")
+        window.location.reload();
+        }
+        else{
+            alert("Login failed")
+        }
+    }
     return (
 <div className="maincontainer">
         <div id="preloder">
@@ -36,7 +56,7 @@ function Home() {
             <div class="row">
             <div class="col-xl-3 col-lg-2">
             <div class="header__logo">
-            <a href="#"><h3 style={{fontFamily:"cursive"}}>DASHBOARD</h3></a>
+            <a href="#"><h3>DASHBOARD</h3></a>
             </div>
             </div>
             <div class="col-xl-6 col-lg-7">
@@ -62,7 +82,7 @@ function Home() {
             <div class="col-lg-3">
             <div class="header__right">
             <div class="header__right__auth">
-            <h3 style={{fontFamily:"cursive"}}>Seller</h3>
+            <h3 onClick={hello} style={{cursor:"pointer"}}>Seller</h3>
             {/* <a href="#">Login</a>
             <a href="#">Register</a> */}
             </div>
@@ -93,12 +113,14 @@ function Home() {
             <div class="row">
             <div class="col-lg-4 col-md-4">
             <div class="section-title">
-            <h4>jewellery shop</h4>
+            <h6>here will be the Name of Shop</h6><br></br>
+            <h6 className="pt-3">here will be the Name of City</h6><br></br>
+            <h6 className="pt-3">Use this shop for X% discount</h6>
             </div>
             
             </div>
-            <b class="text-success text-end" style={{cursor:"pointer"}}>+Add Product</b>
             <div class="col-lg-8 col-md-8">
+            <b class="text-success text-end pb-5" style={{cursor:"pointer"}} onClick={hello1} >+Add New</b>
             </div>
             </div>
             <div class="row property__gallery">
@@ -113,7 +135,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Buttons tweed blazer</a></h6>
+            <h6><a href="#">Buttons tweed blazer - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -121,7 +143,7 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -135,15 +157,15 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Flowy striped skirt</a></h6>
+            <h6><a href="#">Flowy striped skirt - $ 49.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
+            <i class="fa fa-star text-secondary"></i>
             </div>
-            <div class="product__price">$ 49.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -158,7 +180,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Cotton T-Shirt</a></h6>
+            <h6><a href="#">Cotton T-Shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -166,7 +188,7 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -180,7 +202,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Slim striped pocket shirt</a></h6>
+            <h6><a href="#">Slim striped pocket shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -188,7 +210,7 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -202,7 +224,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Fit micro corduroy shirt</a></h6>
+            <h6><a href="#">Fit micro corduroy shirt - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -210,12 +232,12 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
-            <div class="product__item sale">
+            <div class="product__item">
             <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-6.jpg">
             <div class="label sale">Sale</div>
             <ul class="product__hover">
@@ -225,7 +247,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Tropical Kimono</a></h6>
+            <h6><a href="#">Tropical Kimono $ 49.0 <span>$ 59.0</span></a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -233,7 +255,7 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -247,7 +269,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Contrasting sunglasses</a></h6>
+            <h6><a href="#">Contrasting sunglasses - $ 59.0</a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -255,12 +277,12 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 59.0</div>
+            <div class="product__price ">Description  </div>
             </div>
             </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 mix women men kid accessories cosmetic">
-            <div class="product__item sale">
+            <div class="product__item">
             <div class="product__item__pic set-bg" data-setbg="assets/img/product/product-8.jpg">
             <div class="label">Sale</div>
             <ul class="product__hover">
@@ -270,7 +292,7 @@ function Home() {
             </ul>
             </div>
             <div class="product__item__text">
-            <h6><a href="#">Water resistant backpack</a></h6>
+            <h6><a href="#">Water resistant backpack - $ 49.0 </a></h6>
             <div class="rating">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -278,7 +300,7 @@ function Home() {
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             </div>
-            <div class="product__price">$ 49.0 <span>$ 59.0</span></div>
+            <div class="product__price">Description</div>
             </div>
             </div>
             </div>
@@ -368,8 +390,7 @@ function Home() {
             <div class="footer__newslatter">
             <h6>NEWSLETTER</h6>
             <form action="#">
-            <input type="text" placeholder="Email" />
-            <button type="submit" class="site-btn">Subscribe</button>
+
             </form>
             <div class="footer__social">
             <a href="#"><i class="fa fa-facebook"></i></a>

@@ -117,6 +117,17 @@ ol {
 	display: inline-block;
 }
 
+
+.section-title h6 {
+	color: #726464;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+}
+
+
+
 .section-title h4:after {
 	position: absolute;
 	left: 0;
@@ -125,6 +136,12 @@ ol {
 	width: 70px;
 	background: #ca1515;
 	content: "";
+}
+
+.section-title h6:after {
+	
+
+	
 }
 
 .set-bg {
@@ -909,7 +926,18 @@ ol {
 .footer__newslatter form input {
 	height: 36px;
 	width: 100%;
-	border: 1px solid #e1e1e1;
+	border: 1px solid #0c3869;
+	border-radius: 500px;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #666666;
+}
+
+
+.footer__newslatter form select {
+	height: 36px;
+	width: 100%;
+	border: 1px solid #0c3869;
 	border-radius: 500px;
 	padding-left: 30px;
 	font-size: 14px;

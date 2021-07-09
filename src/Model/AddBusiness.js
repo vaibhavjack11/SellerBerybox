@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "../View/Home";
-class HomeContainer extends React.Component {
+import AddBusiness from "../View/AddBusiness";
+class AddBusinessContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -9,16 +9,14 @@ class HomeContainer extends React.Component {
 
   }
 
-
- 
   render() {
     return (
       <>
-        <Home
+        <AddBusiness
         {...this.props}
-        ></Home>
+        ></AddBusiness>
       </>
     );
   }
 }
-export default HomeContainer;
+export default AddBusinessContainer;

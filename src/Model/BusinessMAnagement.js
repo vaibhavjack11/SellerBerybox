@@ -1,5 +1,5 @@
 import React from "react";
-import Categories from "../View/Categories";
+import Categories from "../View/BusinessManagement";
 class CategoriesContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +13,7 @@ class CategoriesContainer extends React.Component {
     return (
       <>
         <Categories
+        {...this.props}
         ></Categories>
       </>
     );

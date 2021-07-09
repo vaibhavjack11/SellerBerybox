@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "../View/Home";
-class HomeContainer extends React.Component {
+import AddItem from "../View/AddItem";
+class AddItemContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -9,16 +9,14 @@ class HomeContainer extends React.Component {
 
   }
 
-
- 
   render() {
     return (
       <>
-        <Home
+        <AddItem
         {...this.props}
-        ></Home>
+        ></AddItem>
       </>
     );
   }
 }
-export default HomeContainer;
+export default AddItemContainer;
