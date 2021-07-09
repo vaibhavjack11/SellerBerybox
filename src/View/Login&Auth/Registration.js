@@ -122,7 +122,7 @@ function Registration(props) {
             <div className="row mb-5 ">
             <div className="col-7 text-end">
             <button onClick={hello} className="btn btn text-white" style={{backgroundColor:"#0b3a6a"}} onClick={handleSignin} >
-            Signin
+            <a href="home">Signin</a>
             </button>
             </div>
             </div>
